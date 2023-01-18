@@ -20,12 +20,13 @@ function NewPlantForm({onAddPlant}) {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
+
     const config = {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify(formData)
+      body: JSON.stringify({...formData, price: Number(price)})
     }
 
     fetch('http://localhost:6001/plants', config)
