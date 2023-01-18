@@ -135,3 +135,8 @@ input:focus {
     width: calc(20% - 2rem);
   }
 }
+
+button.delete {
+  background-color: palevioletred;
+  color: white;
+}
