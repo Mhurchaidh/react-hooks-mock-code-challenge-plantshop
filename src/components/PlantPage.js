@@ -8,7 +8,7 @@ function PlantPage() {
   const [plantsArray, setPlantsArray] = useState([]);
   const [searchValue, setSearchValue] = useState('');
   const [editedPlant, setEditedPlant] = useState({});
-  const [deleteIndex, setDeleteIndex] = useState('');
+  const [deleteIndex, setDeleteIndex] = useState(0);
 
   useEffect(() => {
     fetch('http://localhost:6001/plants')
